@@ -43,13 +43,13 @@ def speak_text(text):
 def main():
     while True:
         # Wait for user to say "Computer"
-        print("Say 'Computer' to start recording your question")
+        print("Say 'assistant' to start recording your question")
         with sr.Microphone() as source:
             recognizer = sr.Recognizer()
             audio = recognizer.listen(source)
             try:
                 transcription = recognizer.recognize_google(audio)
-                if transcription.lower() == "computer":
+                if transcription.lower() == "assistant":
                     # Record audio
                     filename = "input.wav"
                     print("Say your question")

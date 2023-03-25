@@ -132,4 +132,4 @@ dmypy.json
 
 # Generated files
 output.html
-.wav
+*.wav
